@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SellerMaster.master.cs" Inherits="BookShop.View.Seller.SellerMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style>
+        * {
+            font-family: Rockwell;
+        }
+
+        #left {
+            color: white;
+            height: 1000px;
+            background-color: #80b9ba;
+        }
+
+        label {
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #e8e8e0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+
+                <div style="height: 100px" aria-atomic="False">
+                </div>
+                <div class="p-2">
+                    <div class="mb-4">
+                        <img src="../../Images/open-book.png" height="50px" width="50px" />
+                        <a href="#">
+                            <label>Sell Book</label></a>
+                    </div>
+
+                   
+                    <div style="height: 350px" aria-atomic="False">
+                    </div>
+                    <div>
+                        <img src="../../Images/home.png" height="50px" width="50px" />
+                        <a href="../Login.aspx">
+                            <label>Logout</label></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-10">
+                <div class="row" style="height: 150px">
+                    <img src="../../Images/Book-bg.png" alt="Book" height="150" width="100%" />
+                </div>
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="MyContant" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

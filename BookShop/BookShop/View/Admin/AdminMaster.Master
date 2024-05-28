@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="BookShop.View.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+        * {
+            font-family: Rockwell;
+        }
+
+        #left {
+            color: white;
+            height: 10000px;
+            background-color: #80b9ba;
+        }
+
+        label {
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #e8e8e0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+
+                <div style="height: 50px" aria-atomic="False">
+                </div>
+                <div class="p-2">
+                    <div class="mb-4">
+                        <img src="../../Images/open-book.png" height="50px" width="50px" />
+                        <a href="Books.aspx">
+                            <label>Books</label></a>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="../../Images/user_typing.png" height="50px" width="50px" />
+                        <a href="Author.aspx">
+                            <label>Authors</label></a>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="../../Images/male_user.png" height="50px" width="50px" />
+                        <a href="Seller.aspx">
+                            <label>Sellers</label></a>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="../../Images/categorization.png" height="50px" width="50px" />
+                        <a href="Categories.aspx">
+                            <label>Categories</label></a>
+                    </div>
+                    <div class="mb-4">
+                        <img src="../../Images/SaleOverview.png" height="50px" width="50px" />
+                        <a href="SalesOverview.aspx">
+                            <label>Sales</label></a>
+                    </div>
+                    <div style="height: 20.8vh" aria-atomic="False">
+                    </div>
+                    <div>
+                        <img src="../../Images/home.png" height="50px" width="50px" />
+                        <a href="../Login.aspx">
+                            <label>Logout</label></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-10">
+                <div class="row" style="height: 150px">
+                    <img src="../../Images/Book-bg.png" alt="Book" height="150" width="100%" />
+                </div>
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="MyContant" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
